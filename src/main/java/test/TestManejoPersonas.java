@@ -8,6 +8,10 @@ public class TestManejoPersonas {
 
     public static void main(String[] args) {
         PersonaDAO personaDao = new PersonaDAO();
+        
+        Persona personaNueva = new Persona("Ruso", "Vegetales", "rv@gmail.com", "1234567890");
+        personaDao.insertar(personaNueva);
+        
         List<Persona> listaPersonas = personaDao.seleccionar();
 //        for (Persona persona : listaPersonas) {
 //            System.out.println("persona = " + persona);
@@ -15,5 +19,6 @@ public class TestManejoPersonas {
         listaPersonas.forEach(persona -> {
             System.out.println("persona = " + persona);
         });
+        
     }
 }
