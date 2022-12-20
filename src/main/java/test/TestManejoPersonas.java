@@ -12,8 +12,11 @@ public class TestManejoPersonas {
 //        Persona personaNueva = new Persona("Ruso", "Vegetales", "rv@gmail.com", "1234567890");
 //        personaDao.insertar(personaNueva);
         
-        Persona personaNueva2 = new Persona(4, "BotRuso", "Frutas", "brf@gmail.com", "9876543210");
-        personaDao.actualizar(personaNueva2);
+//        Persona personaNueva2 = new Persona(4, "BotRuso", "Frutas", "brf@gmail.com", "9876543210");
+//        personaDao.actualizar(personaNueva2);
+
+        Persona personaNueva3 = new Persona(4);
+        personaDao.borrar(personaNueva3);
         
         
         List<Persona> listaPersonas = personaDao.seleccionar();
