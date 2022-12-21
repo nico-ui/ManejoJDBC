@@ -8,13 +8,13 @@ public class TestManejoUsuarios {
     public static void main(String[] args) {
         
         
-        UsuarioDAO personaDao = new UsuarioDAO();
+        UsuarioDAO usuarioDAO = new UsuarioDAO();
         
-        Usuario usuarioNueva = new Usuario("Nico", "1234");
-        personaDao.insertar(usuarioNueva);
+//        Usuario usuarioNueva = new Usuario("Nico", "1234");
+//        usuarioDAO.insertar(usuarioNueva);
         
-//        Persona personaNueva2 = new Persona(4, "BotRuso", "Frutas", "brf@gmail.com", "9876543210");
-//        personaDao.actualizar(personaNueva2);
+        Usuario usuario2 = new Usuario(2, "BotRuso", "Frutas");
+        usuarioDAO.actualizar(usuario2);
 
 //        Persona personaNueva3 = new Persona(4);
 //        personaDao.borrar(personaNueva3);
