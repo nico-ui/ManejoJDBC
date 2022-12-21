@@ -13,12 +13,11 @@ public class TestManejoUsuarios {
 //        Usuario usuarioNueva = new Usuario("Nico", "1234");
 //        usuarioDAO.insertar(usuarioNueva);
         
-        Usuario usuario2 = new Usuario(2, "BotRuso", "Frutas");
-        usuarioDAO.actualizar(usuario2);
+//        Usuario usuario2 = new Usuario(2, "BotRuso", "Frutas");
+//        usuarioDAO.actualizar(usuario2);
 
-//        Persona personaNueva3 = new Persona(4);
-//        personaDao.borrar(personaNueva3);
-        
+        Usuario usuarioBorrar =  new Usuario(2);
+        usuarioDAO.borrar(usuarioBorrar);
 //       
 //
         List<Usuario> listaUsuarios = UsuarioDAO.seleccionar();
