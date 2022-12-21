@@ -17,7 +17,7 @@ public class UsuarioDAO {
     private static final String SQL_UPDATE = "UPDATE usuario SET usuario = ?, password = ? WHERE id_usuario = ?";
     private static final String SQL_DELETE = "DELETE FROM usuario WHERE id_usuario = ?";
 
-    public static List<Usuario> seleccionar() {
+    public List<Usuario> seleccionar() {
         Connection conn = null;
         PreparedStatement stmt = null;
         ResultSet rs = null;
